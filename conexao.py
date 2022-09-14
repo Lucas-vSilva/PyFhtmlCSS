@@ -10,7 +10,7 @@ class conexao:
             self.db_connection = mysql.connector.connect(host="localhost",
                                                          user="root",
                                                          password="",
-                                                         database="bancoFlask")
+                                                         database="bancoflask")
             return self.db_connection
         except mysql.connector.Error as erro:
             if erro.errno == errorcode.ER_BAD_DB_ERROR: 

@@ -40,7 +40,7 @@ class model:
     def excluir(self, cod):
         try:
             sql = "delete from person where codigo = '{}'".format(cod)
-            self.con.execute(cod)
+            self.con.execute(sql)
             self.db_connection.commit()
             return "{} linha excluida!".format(cod) 
         except Exception as erro:
